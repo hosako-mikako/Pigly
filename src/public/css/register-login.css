@@ -1,0 +1,153 @@
+/* レイアウト */
+.bg-register-login {
+    background-image: url('/storage/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.auth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-content {
+    max-width: 580px;
+    border-radius: 24px;
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+
+/* タイトル */
+.title-content {
+    text-align: center;
+}
+
+.site-title,
+.page-title {
+    line-height: 1;
+    letter-spacing: 10%;
+}
+
+.site-title {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #EC87EF;
+}
+
+.page-title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #333333;
+}
+
+.step-title {
+    text-align: center;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+
+}
+
+/* フォーム */
+.form-group {
+    width: 500px;
+    margin: 10px 0 35px 0;
+}
+
+.form-name {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+}
+
+.form-input {
+    margin: 10px 0 0 0;
+}
+
+.input-with-unit {
+    display: flex;
+    align-items: center;
+}
+
+.input-text {
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    padding: 11px 10px;
+    width: 470px;
+    margin-right: 10px;
+}
+
+.unit {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+}
+
+.input-text::placeholder {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #CDCDCD;
+}
+
+/* ボタン */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.submit-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 0;
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+    margin: 10px 0;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.link-button {
+    height: 24px;
+    border-bottom: 1px solid #2C99FF;
+    text-decoration: none;
+
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #2C99FF;
+}
+
+/* エラーメッセージ */
+.error-message {
+    display: block;
+    margin-top: 10px;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #F65A5A;
+}

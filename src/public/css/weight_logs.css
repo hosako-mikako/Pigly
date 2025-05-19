@@ -1,0 +1,574 @@
+.header {
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #CDCDCD;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 10%;
+    color: #EC87EF;
+    margin: 0;
+}
+
+.header-action {
+    display: flex;
+    justify-content: space-between;
+    width: 319px;
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 44px;
+
+    border: 1px solid #CDCDCD;
+    background-color: #F7F7F7;
+    color: #333333;
+    
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+button.custom-button {
+    appearance: none;
+    background-color: #F7F7F7;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.bi-gear, .bi-box-arrow-right{
+    margin-right: 10px;
+}
+
+.weight-tracker {
+    width: 100%;
+    padding: 70px 196px; 
+    background-color: #F9F9F9;
+}
+
+.stats-contents {
+    width: 1120px;
+    height: 154px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.stat-box {
+    width: 230px;
+    height: 94px;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.stat-label {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+}
+
+.stat-value {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    color: #333333;
+}
+
+.stat-unit {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+    vertical-align: bottom;
+    
+}
+
+.separator {
+    height: 70px;
+    width: 1px;
+    background-color: #CDCDCD; 
+}
+
+.data-contents {
+    width: 1120px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.fillter-row {
+    width: 1060px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.search-form {
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.data-inputs {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form-control {
+    width: 200px;
+    height: 43px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    padding: 11px 10px;
+    background-color: #FFFFFF;
+    margin: 0 10px;
+    color: #CDCDCD;
+}
+
+/* カレンダー入力フィールドのカスタマイズ */
+input[type="date"] {
+    position: relative;
+    padding-right: 25px;
+    /* アイコン用のスペース */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* カレンダーアイコンを非表示にする（クロスブラウザ対応） */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    /* アイコンを透明に */
+    width: 100%;
+    /* クリック可能領域を広げる */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* 代わりに三角アイコンを表示 */
+input[type="date"]::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    pointer-events: none;
+    font-size: 14px;
+    color: #CDCDCD;
+
+/* 三角形の作成 */
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    /* 幅の半分 */
+    border-right: 7px solid transparent;
+    /* 幅の半分 */
+    border-bottom: 8px solid #CDCDCD;
+    /* 高さ */
+}
+
+.range-separator {
+    width: 14px;
+    height: 21px;
+    text-align: center;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #333333;
+}
+
+.btn-search {
+    width: 100px;
+    height: 43px;
+    margin-right: 10px;
+    padding: 9.5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #919191;
+
+    color: #FFFFFF;
+}
+
+.btn-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 43px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    padding: 9.5px 10px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.reset-message {
+    display: block;
+    margin: 10px 0;
+    position: absolute;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+
+
+.btn-add {
+    width: 160px;
+    height: 43px;
+    padding: 7.5px 10px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.search-result-info {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.table-responsive {
+    width: 1060px;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.table-title {
+    position: relative;
+    width: 100%;
+    height: 60px;
+
+}
+
+.table-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+}
+
+
+.data-row {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #F7F7F7;
+    text-align: center;
+
+}
+
+.data-row:hover {
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.data-cell {
+    width: 300px;
+    padding: 18px 40px;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #333333;
+}
+
+/* ページネーション */
+.custom-pagination {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.custom-pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.custom-pagination li {
+    list-style: none;
+    font-size: 24px;
+}
+
+.custom-pagination li a,
+.custom-pagination li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    padding: 5px;
+    color: #555;
+    text-decoration: none;
+}
+
+.custom-pagination li.active span {
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px; }
+
+
+/* モーダルウィンドウの基本スタイル */
+.modal {
+    display: none;
+    /* 初期状態は非表示 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 912px;
+    overflow: auto;
+    background-color: #33333380;
+    /* 半透明の黒背景 */
+
+    
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px 20px;
+    width: 800px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    color: #333333;
+}
+
+.form-group {
+    width: 760px;
+    margin: 20px 0;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+}
+
+.span {
+    width: 34px;
+    border-radius: 3px;
+    padding: 0 5px;margin-left: 10px;
+    background-color: #F65A5A;
+
+
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.form-input {
+    width: 100%;
+    height: 43px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    padding: 11px 10px;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #333333;
+}
+
+.form-textarea {
+    width: 760px;
+    height: 160px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    padding: 11px 10px;
+
+}
+
+.validation-error {
+    display: block;
+    margin-top: 10px;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #F65A5A;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 760px;
+    height: 50px;
+}
+
+.btn-cansel {
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    padding: 13px 10px;
+    background-color: #E0DFDE;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    margin-right: 10px;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.btn-register {
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+    
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+/* モーダルスタイルをページ内コンテンツとしても使えるように */
+.modal-style-container {
+    height: 912px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f8f8f8;
+}
+
+/* 削除ボタン用のスタイル */
+.btn-delete {
+    width: 41px;
+    height: 44px;
+    border: none;
+    padding: 10px;
+    color:#F65A5A;
+    background-color: #FFFFFF;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+/* ヘッダーとの間隔調整 */
+.modal-style-container .modal-content {
+    margin-top: 0;
+}
+
+.modal-content__goal {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+    height: 298px;
+    max-width: 470px;
+}
+
+.form-input__goal {
+    width: 400px;
+    height: 43px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    padding: 11px 10px;
+    margin: 30px 0;
+
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #333333;
+}
+
+.modal-header__goal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header__goal h2 {
+    margin: 0;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    color: #333333;
+}
